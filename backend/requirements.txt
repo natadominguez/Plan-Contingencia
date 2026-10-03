@@ -1,0 +1,11 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.1
+httpx>=0.28.1
+x402[fastapi,httpx,evm]>=2.22.0
+web3>=7.0.0
+apscheduler>=3.10.4
+openai>=1.40.0
+numpy>=1.26.0

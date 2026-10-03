@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+.env
+!*.example
+
+# Estado generado en runtime
+backend/db.json
+backend/corpus/index.json
+backend/corpus/versions_snapshot.json
+
+# Node
+node_modules/
+.next/
+out/
+.env.local
+!*.example
+
+# Solidity / tooling
+out/
+cache/
+artifacts/
+
+# OS
+.DS_Store
+Thumbs.db

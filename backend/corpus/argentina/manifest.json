@@ -1,0 +1,69 @@
+{
+  "jurisdiction": "AR",
+  "updated": "2026-10-01",
+  "laws": [
+    {
+      "id": "L25326",
+      "title": "Ley 25.326, Proteccion de Datos Personales",
+      "file": "ley_25326_datos.md",
+      "version": "2000-original",
+      "effective_date": "2000-11-04",
+      "tags": ["datos_personales", "seguridad_informatica"],
+      "change_summary": "Version original sancionada en 2000"
+    },
+    {
+      "id": "L19587",
+      "title": "Ley 19.587, Higiene y Seguridad en el Trabajo (+ Decreto 351/79)",
+      "file": "ley_19587_seguridad_laboral.md",
+      "version": "1979-reglamentaria",
+      "effective_date": "1979-02-05",
+      "tags": ["seguridad_laboral", "emergencias"],
+      "change_summary": "Reglamentacion por Decreto 351/79"
+    },
+    {
+      "id": "L24557",
+      "title": "Ley 24.557, Riesgos del Trabajo (LRT)",
+      "file": "ley_24557_riesgos_trabajo.md",
+      "version": "1995-original",
+      "effective_date": "1995-10-01",
+      "tags": ["seguridad_laboral"],
+      "change_summary": "Version original"
+    },
+    {
+      "id": "L27287",
+      "title": "Ley 27.287, SINAGIR - Gestion Integral del Riesgo",
+      "file": "ley_27287_sinagir.md",
+      "version": "2016-original",
+      "effective_date": "2016-10-19",
+      "tags": ["emergencias", "proteccion_civil"],
+      "change_summary": "Crea el Sistema Nacional para la Gestion Integral del Riesgo"
+    },
+    {
+      "id": "L26388",
+      "title": "Ley 26.388, Delitos Informaticos (modif. Codigo Penal)",
+      "file": "ley_26388_delitos_informaticos.md",
+      "version": "2008-original",
+      "effective_date": "2008-06-24",
+      "tags": ["delitos_informaticos", "seguridad_informatica"],
+      "change_summary": "Incorpora figuras penales informaticas"
+    },
+    {
+      "id": "CCC1730",
+      "title": "Codigo Civil y Comercial, arts. 1730-1735 (fuerza mayor) y 956 (incumplimiento)",
+      "file": "ccc_fuerza_mayor.md",
+      "version": "2015-vigente",
+      "effective_date": "2015-08-01",
+      "tags": ["contratos", "fuerza_mayor", "proveedores"],
+      "change_summary": "Codigo unificado vigente desde 2015"
+    },
+    {
+      "id": "ISO22301",
+      "title": "ISO 22301:2019, Continuidad del Negocio (referencia)",
+      "file": "iso_22301_referencia.md",
+      "version": "2019",
+      "effective_date": "2019-10-31",
+      "tags": ["continuidad"],
+      "change_summary": "Estandar internacional de BCMS, adopcion IRAM-ISO"
+    }
+  ]
+}
