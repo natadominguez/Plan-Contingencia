@@ -24,7 +24,7 @@ type Update = {
 
 export default function Home() {
   const { isConnected } = useAccount();
-  const { connect, connectors } = useConnect();
+  const { connect, connectors, error: connectError, isPending: isConnecting } = useConnect();
   const { data: walletClient } = useWalletClient();
 
   const [company, setCompany] = useState({
@@ -61,7 +61,23 @@ export default function Home() {
       <p>Planes de continuidad de negocio — micropagos x402 en Monad testnet.</p>
 
       {!isConnected ? (
-        <button onClick={() => connect({ connector: connectors[0] })}>Conectar wallet</button>
+        <section>
+          {connectors.map((c) => (
+            <button key={c.uid} disabled={isConnecting} onClick={() => connect({ connector: c })}>
+              {isConnecting ? "Conectando..." : `Conectar ${c.name}`}
+            </button>
+          ))}
+          {connectError && <p style={{ color: "crimson" }}>{connectError.message}</p>}
+          {typeof window !== "undefined" && !(window as { ethereum?: unknown }).ethereum && (
+            <p>
+              No se detecto una wallet inyectada en el navegador. Instala{" "}
+              <a href="https://metamask.io" target="_blank" rel="noreferrer">
+                MetaMask
+              </a>{" "}
+              u otra wallet compatible y recarga la pagina.
+            </p>
+          )}
+        </section>
       ) : (
         <section style={{ border: "1px solid #ccc", padding: 16, borderRadius: 8 }}>
           <h2>Empresa</h2>
